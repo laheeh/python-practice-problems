@@ -8,7 +8,11 @@ def sum_cubes(n):
     
     This function may not use any loops or list comprehensions.
     """
-
+    if n == 1:
+        return 1
+    elif n > 1:
+        x += sum_cubes(n**2)
+        return x
     pass
 
 
